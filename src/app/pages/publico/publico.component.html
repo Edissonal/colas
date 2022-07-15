@@ -1,0 +1,21 @@
+<table *ngIf="vista">
+    <tr>
+        <td valign="middle" class="ticket-actual">
+            <span id="lblTicket1" class="ticket-actual-numero">Tiket{{tikets.id}}</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Escritorio{{tikets.valor}}</span>
+        </td>
+        <td>
+            <table >
+                <tr *ngFor="let busca of buscar">
+                    <td>
+                        <span id="lblTicket2" class="ticket-secundario">tiket{{busca.id}}</span>
+                        <br>
+                        <span id="lblEscritorio2">Escritorio{{busca.valor}}</span>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
